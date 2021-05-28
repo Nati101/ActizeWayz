@@ -1,13 +1,14 @@
 .navbar {
-  background: linear-gradient(to bottom, #003060, #0e86d4);
+  background-color: rgba(32, 40, 48, 255);
   height: 80px;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  box-shadow: -8px 10px 12px black;
+  border-radius: 1px 1px 10px 10px;
 }
 
 .navbar-container {
@@ -15,21 +16,46 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  max-width: 2500px;
+  max-width: 1500px;
 }
 
 .navbar-logo img {
   cursor: pointer;
   height: auto;
   width: auto;
+  max-height: 25px;
+  max-width: 100px;
+  left: auto;
+  position: absolute;
+  left: 35px;
+  top: 40px;
+}
+
+.navbar-logo-name .first {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
   max-height: 72px;
   max-width: 150px;
   left: auto;
-  position: fixed;
-  left: 10px;
-  top: 25px;
+  position: absolute;
+  left: 130px;
+  top: 15px;
+  font-size: 20px;
 }
 
+.navbar-logo-name .sec {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  max-height: 72px;
+  max-width: 150px;
+  left: auto;
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  font-size: 15px;
+}
 .fa-typo3 {
   margin-left: 0.5rem;
   font-size: 1.8rem;
@@ -38,17 +64,12 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 2px;
+  grid-gap: 1px;
   list-style: none;
   text-align: center;
-  width: 90vw;
-  height: 4.5vw;
+  width: 60vw;
   justify-content: end;
-  margin-right: 2rem;
-}
-
-.nav-item {
-  height: 80px;
+  margin-right: -20vw;
 }
 
 .nav-links {
@@ -56,17 +77,17 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.2rem 0.5rem;
-  height: 50%;
+  padding: 0.5rem 1rem;
+  height: 100%;
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid rgba(239, 123, 48, 255);
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: rgba(239, 123, 48, 255);
 }
 
 .nav-links-mobile {
@@ -80,6 +101,12 @@
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
+  }
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
   }
 
   .nav-menu {
@@ -95,11 +122,12 @@
   }
 
   .nav-menu.active {
-    background: linear-gradient(to top, #003060, #0e86d4);
-    left: 0;
-    opacity: 100;
+    background: rgba(239, 123, 48, 255);
+    left: -40px;
+    top: 60px;
+    opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: -1;
   }
 
   .nav-links {
@@ -107,29 +135,14 @@
     padding: 2rem;
     width: 100%;
     display: table;
-    font-size: 30px;
   }
 
   .nav-links:hover {
     background-color: #fff;
-    color: #003060;
+    color: #242424;
     border-radius: 0;
   }
 
-  .navbar-logo {
-    padding-top: 5px;
-  }
-  .navbar-logo img {
-    cursor: pointer;
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 150px;
-    left: auto;
-    position: fixed;
-    left: 10px;
-    top: 25px;
-  }
   .menu-icon {
     display: block;
     position: absolute;
@@ -141,28 +154,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: rgba(239, 123, 48, 255);
     font-size: 2rem;
-  }
-
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
-  }
-
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
   }
 }
