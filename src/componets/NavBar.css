@@ -69,7 +69,7 @@
   text-align: center;
   width: 60vw;
   justify-content: end;
-  margin-right: -20vw;
+  margin-right: -30vw;
 }
 
 .nav-links {
@@ -123,18 +123,25 @@
 
   .nav-menu.active {
     background: rgba(239, 123, 48, 255);
-    left: -40px;
+    width: 95.5vw;
+    overflow-x: hidden;
+    left: 0vw;
     top: 60px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: -1;
+    align-items: center;
   }
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
+    padding: 3rem;
+    width: 95.5vw;
+    display:  table;
+    margin-left: -23vw;
+    table-layout: auto;
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .nav-links:hover {
