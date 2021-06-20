@@ -28,7 +28,7 @@
   left: auto;
   position: absolute;
   left: 35px;
-  top: 40px;
+  top: 25px;
 }
 
 .navbar-logo-name .first {
@@ -141,7 +141,7 @@
     text-align: center;
     padding: 3rem;
     width: 95.5vw;
-    display:  table;
+    display: table;
     margin-left: -23vw;
     table-layout: auto;
     font-size: 20px;

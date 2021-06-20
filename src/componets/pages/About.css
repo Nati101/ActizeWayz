@@ -7,8 +7,8 @@
   color: #fff;
   text-align: center;
   box-shadow: rgba(222, 231, 229, 255);
+  margin-top: 20px;
 }
-
 
 .section__title--aboutus {
   color: rgba(222, 231, 229, 255);
@@ -30,8 +30,12 @@
   margin-bottom: 5em;
 }
 .service {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 1100px;
+  padding: 5em;
+  text-align: center;
+}
+.service p {
+  margin-bottom: 2vw;
 }
 .service img {
   max-width: 200px;
@@ -53,6 +57,10 @@
   margin: 0 auto;
   margin-bottom: 10vw;
   margin-top: -2vw;
+}
+.about-me__body p {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .section__title--about {
   color: rgba(239, 123, 48, 255);
